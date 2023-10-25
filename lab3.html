@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Colorado Buffaloes Football Ticket Order Form</title>
+
+<style>
+	.header{
+		margin: 20px;
+	}
+	.form-row{
+		margin: 20px;
+		clear: both;
+	}
+	.name-label{
+		width: 200px;
+		font-weight: bold;
+		float: left;
+	}
+
+	#order-btn{
+		background-color: goldenrod;
+		color: white;
+	}
+	</style>
+
+</head>
+
+<body>
+	<div class = "header">
+
+     <h1>Colorado Buffaloes Football Ticket Order Form</h1> 
+     <img src = "https://new.coiski.com/wp-content/uploads/2019/09/We-Toured-the-COLORADO-BUFFALOES-AMAZING-Football-Facility-Equipment-Room-Royal-Key.jpeg" width= 300px/>
+ </div>
+
+<form action = "confirmation.html">
+	<div class = "form-row">
+		<label class = "name-label" for = "first-name">First Name:</label>
+		<input id="firstname" type="text" placeholder= "Daniel" required />
+	</div>
+
+	<div class = "form-row">
+		<label class = "name-label" for = "last-name">Last Name:</label>
+		<input id="lastname" type="text" placeholder= "Miller" required />
+	</div>
+
+	<div class = "form-row">
+		<label class = "name-label" for = "email">Email:</label>
+		<input id="email" type="email" placeholder= "abc@gmail.com" required />
+	</div>
+
+	<div class = "form-row">
+		<label class = "name-label" for = "phone">Phone Number:</label>
+		<input id="phone" type="phone" placeholder= "(323)-XXX-XXXX" required />
+	</div>
+
+	<div class= "form-row">
+		<label class= "name-label">Available Passes:</label>
+
+		<input id="Colorado Pass" type= "radio" name= "Pass" value= "Colorado Pass" />
+		<label for = "Normal Pass">Normal Pass($45)</label>
+
+		<input id="Colorado Pass" type= "radio" name= "Pass" value= "Colorado Pass" />
+		<label for = "Field Pass">Field Pass($75)</label>
+
+		<input id="Colorado Pass" type= "radio" name= "Pass" value= "Colorado Pass" />
+		<label for = "Box Pass">Box Pass($150)</label>
+	</div>
+
+<div class ="form-row">
+	<label class= "name-label">Seat Preference:</label>
+
+		<input id="eastA" type= "checkbox" value= "eastA" />
+		<label for = "eastA">East-A </label>
+
+		<input id="eastB" type= "checkbox" value= "eastB" />
+		<label for = "eastB">East-B </label>
+
+		<input id="westA" type= "checkbox" value= "westA" />
+		<label for = "westA">West-A</label>
+
+		<input id="westB" type= "checkbox" value= "westB" />
+		<label for = "westB">West-B</label>
+</div>
+
+<div class= "form-row">
+
+	<label class ="name-label" for="quantity">Quantity: </label>
+	<select id ="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</select>
+	</div>
+
+<div class ="form-row">
+<label class = "name-label" for="comments">Comments:</label>
+<textarea id="comments" placeholder="Write something. . ." required></textarea>
+
+	
+</div>
+<div class="form-row">
+	<input id="terms" type="checkbox" value="terms" required />
+	<label for="terms">I accept the terms and conditions</label>
+</div>
+<div class="form-row">
+	<button id="order-btn" type="order">Order</button>
+	<button id="reset" type="reset">Reset</button>
+</div>
+</form>
+
+
+
+
+</body>
+</html>
