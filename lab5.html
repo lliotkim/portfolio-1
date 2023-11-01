@@ -1,4 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title></title>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: linear-gradient(55deg, #f50505 0%, #0511f5 50%, #0f0f0f 85%);
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {
+text-align: center;
+	padding:20px;
+}
+
+.button{
+
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Player of the Day</h1>
+  <p>Players who played well, traded, or need appreciation</p>
+</div>
+
+<div class="content">
+  <span style = 'font-size:100px;'> &#127936;</span>
+  <br><br><br><br><button class ="button" onclick="myFunction()" id= "select"> For Information </button>
+  <h1 id="result"></h1>
+</div>
+
+</body>
+<script>
+
+	function myFunction(){
+		idArray = new Array()
+		idArray[1] = "James Harden"
+		idArray[2] = "Steph Curry"
+		idArray[3] = "Victor Wembenyama"
+		idArray[4] = "Shai Gilgeous-Alexander"
+		idArray[5] = "Kevin Durant"
+		idArray[6] = "Tyrese Maxey"
+		idArray[7] = "Nikola Jokic"
+		idArray[8] = "Joel Embiid"
+		idArray[9] = "Damian Lillard"
+		idArray[10] = "Chris Paul"
+
+ document. getElementById("select").onclick = myFunction;
+ randomWord = Math.floor(Math.random()*10);
+ document. getElementById("result").innerHTML = idArray[randomWord + 1];
+}
+</script>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
